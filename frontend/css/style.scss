@@ -1,0 +1,86 @@
+// Imports
+@import "helper/mixins";
+@import "helper/variables";
+@import "header";
+@import 'bootstrap/mixins';
+@import 'bootstrap/variables';
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.eot?srf3rx');
+  src: url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/icomoon.ttf?srf3rx') format('truetype'),
+  url('../fonts/icomoon/icomoon.woff?srf3rx') format('woff'),
+  url('../fonts/icomoon/icomoon.svg?srf3rx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bases
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: $color-primary;
+  @include transition(.5s);
+  &:hover, &:active, &:focus {
+    color: $color-primary;
+    outline: none;
+  }
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5, h6, figure {
+  color: $color-black;
+  font-family: $font-primary;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+  color: $color-white;
+  background: $color-primary;
+}
+
+::-moz-selection {
+  color: $color-white;
+  background: $color-primary;
+}
+
+::selection {
+  color: $color-white;
+  background: $color-primary;
+}
+
+#page {
+  position: relative;
+  z-index: 2;
+  background: $color-white;
+}
+
+#page {
+  z-index: 2;
+  @include transition(.5s);
+  .offcanvas-visible & {
+    @include page-translate(-275px);
+  }
+}
+
+#fh5co-offcanvas, .fh5co-nav-toggle, #page {
+  @include transition(.5s);
+}
+
+#fh5co-offcanvas, .fh5co-nav-toggle, #page {
+  position: relative;
+}

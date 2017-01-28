@@ -22,7 +22,7 @@ const opts = {
 };
 
 gulp.task('styles', () => {
-  return gulp.src('frontend/css/*.scss')
+  return gulp.src('frontend/css/style.scss')
     .pipe(plumber(opts))
     .pipe(gulpIf(isDevelopment, sourcemaps.init()))
     .pipe(debug({title: 'styles'}))
@@ -32,7 +32,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('assets', () => {
-  return gulp.src('frontend/assets/**', {since: gulp.lastRun('assets')})
+  return gulp.src('frontend/assets/**/*.*', {since: gulp.lastRun('assets')})
     .pipe(newer('public'))
     .pipe(debug({title: 'assets'}))
     .pipe(gulp.dest('public'));

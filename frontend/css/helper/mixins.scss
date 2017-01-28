@@ -1,0 +1,29 @@
+@mixin page-translate($translateX) {
+  -webkit-transform: translateX($translateX);
+  -moz-transform: translateX($translateX);
+  -ms-transform: translateX($translateX);
+  -o-transform: translateX($translateX);
+  transform: translateX($translateX);
+}
+
+@mixin transition($transition) {
+  -webkit-transition: all $transition ease;
+  -moz-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  transition: all $transition ease;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
