@@ -49,8 +49,8 @@ gulp.task('build', gulp.series(
 );
 
 gulp.task('watch', () => {
-  gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
   gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
+  gulp.watch('frontend/css/**/*.*', gulp.series('styles'));
 });
 
 gulp.task('serve', function () {
