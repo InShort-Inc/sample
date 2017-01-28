@@ -1,6 +1,9 @@
 .idea
 
+node_modules
+public
 .sass-cache/
 *.css.map
 
 exclude.md
+templates
