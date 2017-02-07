@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .gtco-nav {
   /*#303841*/
-  background: rgba(48, 56, 65, 0.2);
+  background: $brand-white;
   position: absolute;
   top: 0;
   margin: 0;
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
   a {
     padding: 5px 10px;
-    color: $brand-white;
+    color: $brand-black;
   }
   .menu-1, .menu-2 {
     @media screen and (max-width: $screen-sm) {
@@ -223,10 +223,10 @@ h1, h2, h3, h4, h5, h6, figure {
       a {
         font-size: 16px;
         padding: 30px 10px;
-        color: rgba(255, 255, 255, .5);
+        color: $brand-black;
         @include transition(.5s);
         &:hover, &:focus, &:active {
-          color: rgba(255, 255, 255, 1);
+          color: $brand-primary;
         }
       }
       &.has-dropdown {
@@ -1490,7 +1490,7 @@ form {
           }
           &:hover {
             i {
-              color: $brand-white;
+              color: $brand-black;
             }
           }
         }
