@@ -24,55 +24,423 @@
     <meta name="twitter:url" content=""/>
     <meta name="twitter:card" content=""/>
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">-->
-
     <!--TODO favicon-->
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- TODO CSS -->
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="css/themify-icons.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
+<div class="gtco-loader"></div>
+
 <div id="page">
-    <header id="header" role="banner"><!--TODO Flew-->
-        <div class="container">
-            <div class="header-inner">
-                <h1><a href="index.html">InShort</a></h1>
-                <nav role="navigation">
+    <nav class="gtco-nav" role="navigation">
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-12 text-right gtco-contact">
+                    <ul class="">
+                        <li><a href="#"><i class="icon-vk"></i></a></li>
+                        <li><a href="#"><i class="ti-telegram"></i></a></li> <!--ToDo telegram logo-->
+                        <li><a href="#"><i class="icon-twitter"></i> </a></li>
+                        <li><a href="#"><i class="icon-instagram"></i> </a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-mail"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div id="gtco-logo">
+                        <a href="index.html">Brief <em>.</em></a>
+                    </div>
+                </div>
+                <div class="col-xs-8 text-right menu-1">
                     <ul>
                         <li><a href="library.html">Библиотека</a></li>
-                        <li><a href="about.html">О проекте</a></li>
                         <li><a href="contact.html">Контакты</a></li>
                     </ul>
-                    <!--TODO search-->
-                </nav>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_banner.jpg);">
+        <div class="overlay"></div>
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-left">
+                    <div class="display-t">
+                        <div class="display-tc">
+                            <h1 class="animate-box" data-animate-effect="fadeInUp">
+                                Расширяй границы мышления
+                            </h1>
+                            <h2 class="animate-box" data-animate-effect="fadeInUp">
+                                Прокачай себя и свой бизнес за <em>10</em> минут в день
+                            </h2>
+                            <p class="animate-box" data-animate-effect="fadeInUp">
+                                <a href="library.html" class="btn btn-white btn-lg btn-outline">
+                                    Начать учиться
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
+    <div id="gtco-features">
+        <div class="gtco-container">
+            <!--<div class="row">-->
+            <!--<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">-->
+            <!--<h2>Почему мы</h2>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="ti-timer"></i>
+                        </span>
+                        <h3>Время</h3>
+                        <p>Вместо нескольких часов 10 минут в день и получай больше инновационных идей.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="icon-arrow-with-circle-left"></i>
+                        </span>
+                        <h3>Успех</h3>
+                        <p>Совершенствуй себя, свой бизнес и карьеру. </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="ti-settings"></i>
+                        </span>
+                        <h3>Удобный формат</h3>
+                        <p>Читай и слушай везде в удобном формате.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                        <span class="icon">
+                            <i class="ti-ruler-pencil"></i>
+                        </span>
+                        <h3>Бесплатно</h3>
+                        <p>Все абсолютно бесплатно.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- content -->
+    <div id="fh5co-project">
+        <!--<div class="container">-->
+        <!--<div class="row animate-box">-->
+        <!--<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">-->
+        <!--<h2>Основные разделы саммари</h2>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+                    <a href="#"><img src="images/project-1.jpg" alt="Free HTML5 Website Template by FreeHTML5.co"
+                                     class="img-responsive">
+                        <h3>Бизнес и стартапы</h3>
+                        <span>15 книг</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+                    <a href="#"><img src="images/project-2.jpg" alt="Free HTML5 Website Template by FreeHTML5.co"
+                                     class="img-responsive">
+                        <h3>Саморазвитие</h3>
+                        <span>25 книг</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center fh5co-project animate-box" data-animate-effect="fadeIn">
+                    <a href="#"><img src="images/project-3.jpg" alt="Free HTML5 Website Template by FreeHTML5.co"
+                                     class="img-responsive">
+                        <h3>Эфективность</h3>
+                        <span>10 книг</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer id="footer" role="contentinfo">
+    <div class="fh5co-blog-style-1">
+        <div class="container">
+            <div class="row p-b">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2 class="fh5co-heading wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        Популярные саммари
+                    </h2>
+                </div>
+            </div>
+            <div class="row p-b">
+                <!--<div class="row row-bottom-padded-md">-->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.1s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Tutorial</a></div>
+                            <img src="images/1432539152_7navikov.png" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">How to Create Cards</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.1s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Health</a></div>
+                            <img src="images/img_same_dimension_3.jpg" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">Drinking Ginger and Lemon Tea</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.7s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Tips</a></div>
+                            <img src="images/img_same_dimension_4.jpg" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">4 Easy Steps to Create a Soup</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+                <!--<div class="row row-bottom-padded-md">-->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.1s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Tutorial</a></div>
+                            <img src="images/img_same_dimension_2.jpg" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">How to Create Cards</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.4s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Health</a></div>
+                            <img src="images/img_same_dimension_3.jpg" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">Drinking Ginger and Lemon Tea</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="fh5co-post wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.7s">
+                        <div class="fh5co-post-image">
+                            <div class="fh5co-overlay"></div>
+                            <div class="fh5co-category"><a href="#">Tips</a></div>
+                            <img src="images/img_same_dimension_4.jpg" alt="Image" class="img-responsive">
+                        </div>
+                        <div class="fh5co-post-text">
+                            <h3><a href="#">4 Easy Steps to Create a Soup</a></h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                Consonantia,
+                                there live the blind texts...</p>
+                        </div>
+                        <div class="fh5co-post-meta">
+                            <a href="#"><i class="icon-chat"></i> 33</a>
+                            <a href="#"><i class="icon-clock2"></i> 2 hours ago</a>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center wow fadeInUp" data-wow-duration="1s"
+                     data-wow-delay="2s">
+                    <a href="#" class="btn btn-primary btn-lg">Другие книги</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gtco-subscribe">
+        <div class="gtco-container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                    <h2>Рассылка</h2>
+                    <p>Будьте первым, кто узнает о новых саммари книг.</p>
+                </div>
+            </div>
+            <div class="row animate-box">
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <button type="submit" class="btn btn-default btn-block">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="gtco-footer" role="contentinfo">
+        <div class="gtco-container">
+            <div class="row row-p	b-md">
+
+                <div class="col-md-4">
+                    <div class="gtco-widget">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint
+                            ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum.
+                            Totam cupiditate nostrum ut neque ab?</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-push-1">
+                    <div class="gtco-widget">
+                        <h3>Компания</h3>
+                        <ul class="gtco-footer-links">
+                            <li><a href="library.html">Библиотека</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gtco-widget">
+                        <h3>Контакты</h3>
+                        <ul class="gtco-quick-contact">
+                            <li><a href="#"><i class="icon-mail2"></i>Написать нам</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12">
+                    <p class="pull-left">
+                        <small class="block">&copy; 2017 Brief. Все права защищены.</small>
+                    </p>
+                    <p class="pull-right">
+                    <ul class="gtco-social-icons pull-right">
+                        <li><a href="#"><i class="icon-vk"></i></a></li>
+                        <li><a href="#"><i class="ti-telegram"></i></a></li> <!--ToDo telegram logo-->
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i> </a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
 
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
 <!-- TODO JS -->
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
 <!-- MAIN JS -->
-<!--<script src="../js/main.js"></script>-->
+<script src="js/main.js"></script>
 
 </body>
 </html>

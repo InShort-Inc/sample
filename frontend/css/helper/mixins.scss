@@ -1,17 +1,24 @@
-@mixin page-translate($translateX) {
-  -webkit-transform: translateX($translateX);
-  -moz-transform: translateX($translateX);
-  -ms-transform: translateX($translateX);
-  -o-transform: translateX($translateX);
-  transform: translateX($translateX);
+@mixin translateX($translatex) {
+  -moz-transform: translateX($translatex);
+  -webkit-transform: translateX($translatex);
+  -ms-transform: translateX($translatex);
+  -o-transform: translateX($translatex);
+  transform: translateX($translatex);
 }
 
 @mixin transition($transition) {
-  -webkit-transition: all $transition ease;
   -moz-transition: all $transition ease;
-  -ms-transition: all $transition ease;
   -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
   transition: all $transition ease;
+}
+
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 @mixin border-radius($radius) {
@@ -21,9 +28,32 @@
   border-radius: $radius;
 }
 
-@mixin inline-block() {
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexwrap() {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+@mixin icomoon() {
+
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
